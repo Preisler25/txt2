@@ -36,7 +36,7 @@ public class HelloController {
 
     @FXML
     protected void setColor() {
-        styleColor = "-fx-text-fill: " + colorPicker.getValue().toString().substring(2) + ";";
+        styleColor = "-fx-text-fill: #" + colorPicker.getValue().toString().substring(2) + ";";
         setStyle();
     }
 
