@@ -6,6 +6,7 @@
     -fx-font-style: italic ;
 }
 
-.bold .text {
+.bold {
     -fx-font-weight: bold ;
+    -fx-font-size: 40px;
 }
