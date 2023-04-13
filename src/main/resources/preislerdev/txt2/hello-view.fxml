@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preislerdev.txt2.HelloController">
    <top>
       <HBox alignment="CENTER" prefHeight="50.0" BorderPane.alignment="CENTER">
          <children>
@@ -25,12 +25,12 @@
                         <TextField fx:id="sizeField" />
                      </children>
                   </VBox>
-                  <Button fx:id="setSizeBtn" mnemonicParsing="false" text="Set" />
+                  <Button fx:id="setSizeBtn" mnemonicParsing="false" onAction="#setSize" text="Set" />
                   <Separator prefWidth="200.0" />
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
                         <Label text="Color" />
-                        <ColorPicker fx:id="colorPicker" />
+                        <ColorPicker fx:id="colorPicker" onAction="#setColor" />
                      </children>
                   </VBox>
                   <Separator prefWidth="200.0" />
@@ -42,19 +42,19 @@
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <Label text="I" />
-                                    <RadioButton fx:id="setTextI" mnemonicParsing="false" />
+                                    <RadioButton fx:id="setTextI" mnemonicParsing="false" onAction="#setI" />
                                  </children>
                               </VBox>
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <Label text="B" />
-                                    <RadioButton fx:id="SetTextB" mnemonicParsing="false" />
+                                    <RadioButton fx:id="setTextB" mnemonicParsing="false" onAction="#setB" />
                                  </children>
                               </VBox>
                               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
                                     <Label text="U" />
-                                    <RadioButton fx:id="setTetU" mnemonicParsing="false" />
+                                    <RadioButton fx:id="setTetU" mnemonicParsing="false" onAction="#setU" />
                                  </children>
                               </VBox>
                            </children>
