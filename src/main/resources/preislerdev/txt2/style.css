@@ -2,11 +2,10 @@
     -fx-underline: true ;
 }
 
-.italic .text {
+.italic {
     -fx-font-style: italic ;
 }
 
 .bold {
     -fx-font-weight: bold ;
-    -fx-font-size: 40px;
 }
