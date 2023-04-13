@@ -27,9 +27,6 @@ public class HelloController {
 
     private String styleColor = "";
     private String styleSize = "";
-    private String styleI = "";
-    private String styleB = "";
-    private String styleU = "";
 
     @FXML
     protected void setSize() {
@@ -46,9 +43,9 @@ public class HelloController {
     @FXML
     protected void setI() {
         if (setTextI.isSelected()) {
-            styleI = "-fx-font-style: italic;";
+            mainTextArea.getStyleClass().add("italic");
         } else {
-            styleI = "";
+            mainTextArea.getStyleClass().remove("italic");
         }
         setStyle();
     }
@@ -56,9 +53,9 @@ public class HelloController {
 @FXML
     protected void setB() {
         if (setTextB.isSelected()) {
-            styleB = "-fx-font-weight: bold;";
+            mainTextArea.getStyleClass().add("bold");
         } else {
-            styleB = "";
+            mainTextArea.getStyleClass().remove("bold");
         }
         setStyle();
     }
@@ -66,16 +63,16 @@ public class HelloController {
     @FXML
     protected void setU() {
         if (setTetU.isSelected()) {
-            styleU = "-fx-underline: true;";
+            mainTextArea.getStyleClass().add("underLine");
         } else {
-            styleU = "";
+            mainTextArea.getStyleClass().remove("underLine");
         }
         setStyle();
     }
 
 
     protected void setStyle() {
-        System.out.println(styleColor + styleSize + styleI + styleB + styleU);
-        mainTextArea.setStyle(styleColor + styleSize + styleI + styleB + styleU);
+        mainTextArea.setStyle(styleColor + styleSize);
+        System.out.println(mainTextArea.getStyleClass());
     }
 }

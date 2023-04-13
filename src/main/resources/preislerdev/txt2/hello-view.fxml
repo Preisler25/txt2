@@ -68,6 +68,6 @@
       </HBox>
    </top>
    <center>
-      <TextArea fx:id="mainTextArea" prefHeight="1000.0" prefWidth="1920.0" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="mainTextArea" prefHeight="1000.0" prefWidth="1920.0" styleClass="bold" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

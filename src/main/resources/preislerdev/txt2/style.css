@@ -1,0 +1,11 @@
+.underLine .text {
+    -fx-underline: true ;
+}
+
+.italic .text {
+    -fx-font-style: italic ;
+}
+
+.bold .text {
+    -fx-font-weight: bold ;
+}
