@@ -3,7 +3,7 @@ package preislerdev.txt2;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
-public class HelloController {
+public class Txt2Controller {
     @FXML
     private TextField sizeField;
 
